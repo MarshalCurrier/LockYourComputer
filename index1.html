@@ -35,7 +35,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
-			min-width: 720px;
+			min-width: 500px;
 		}
 		option{
 			font-size: 20px;
@@ -45,13 +45,16 @@
 			margin-right: auto;
 		
 		}
-		#topPanel{
-			margin-top:15px;
-		}
 	</style>
 </head>
 <body>
-	<div class="large-12 columns panel" id="topPanel">
+
+
+	<div class="row">
+		<div id="timerNotice">
+		  Redirecting in <span id="timerSeconds">10</span> seconds...</div>
+	</div>
+	<div class="large-12 columns panel">
 		<div class="text-center success">
 			<h1>Lock Your Computer</h1>
 			<h2 class="subheader">For the workplace prankster</h2>
@@ -63,17 +66,8 @@
 		<p>
 			Choose the joke OS you'd like to prank with.
 		</p>
-		<div class="row">
-		<div id="timerNotice">
-		  Redirecting in <span id="timerSeconds">10</span> seconds...</div>
-		</div>
-		
 		<div class="large-12 columns text-center" id="LoadingDropdown">
-			<div class="large-4 columns panel">
-					<div><a href="http://lockyourcomputer.com/win7" id="win7" class="button">Win 7</a></div>
-			</div>
-			
-			<div class="large-4 columns">
+			<div class="large-4 columns large-centered text-center panel">
 				<select>
 					<option value="http://lockyourcomputer.com/win7" id="win7">Windows 7 Updating</option>
 					<option value="http://lockyourcomputer.com/win8" id="win8">Windows 8 Updating</option>
@@ -84,26 +78,36 @@
 					<option value="http://lockyourcomputer.com/ubantu" id="ubantu">Ubantu Updating</option>
 					<option value="http://lockyourcomputer.com/mac" id="mac">Mac Updating</option>
 				<select>
-				<button>Go!</button>
-			</div>
-			<div class="large-4 columns panel">
-					<div><a href="http://lockyourcomputer.com/ubuntu" id="linux" class="button">Ubuntu</a></div>
+				<button>submit</button>
 			</div>
 		</div>
-		
-		<div class="large-12 columns text-center">
-			<div class="large-4 columns text-center panel">
-				<div><a href="http://lockyourcomputer.com/xp" id="xp" class="button">XP</a></div>
-			</div>
-			<div class="large-4 columns text-center panel">
-				<div><a href="http://lockyourcomputer.com/win10" id="linux" class="button">Windows 10 Installing</a></div>
-			</div>
-			
-			<div class="large-4 columns text-center panel">
-				<div><a href="http://lockyourcomputer.com/mac" id="mac" class="button">Mac</a></div>    
-			</div>
+	
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/win7" id="win7" class="button">Win 7</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/win8" id="win8" class="button">Win 8</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/win10" id="win10" class="button">Win 10 Installing</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/vista" id="vista" class="button">Vista</a></div>
 		</div>
 		
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/xp" id="xp" class="button">XP</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/ubuntu" id="linux" class="button">Ubuntu</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/win98" id="win98" class="button">Win 98</a></div>
+		</div>
+		<div class="large-3 columns text-center panel">
+			<div><a href="http://lockyourcomputer.com/mac" id="mac" class="button">Mac</a></div>    
+		</div>
+	
 	</div>
 </body>
 </html>
